@@ -24,8 +24,8 @@ Route::get('blog', 'BlogController@index');
 Route::get('blog/{slug}', 'BlogController@showPost');
 
 //后台路由
-Route::any('/test/login','test\LoginController@login' );
-Route::any('/test/','test\IndexController@index' );
+Route::any('/test/login','admin\LoginController@login' );
+Route::any('/test/','admin\IndexController@index' );
 
 //后台路由
 Route::get('admin', function () {
