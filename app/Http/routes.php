@@ -25,7 +25,13 @@ Route::get('blog/{slug}', 'BlogController@showPost');
 
 //后台路由
 Route::any('/test/login','admin\LoginController@login' );
-Route::any('/test/','admin\IndexController@index' );
+
+// Route::any('/test/',function () {
+//     return redirect('test/index');
+// });
+
+Route::any('/test','admin\IndexController@index' );
+Route::any('/test/post','admin\IndexController@post' );
 
 //后台路由
 Route::get('admin', function () {
