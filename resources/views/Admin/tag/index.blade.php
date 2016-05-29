@@ -1,72 +1,82 @@
-@extends('admin.layout')
-
-@section('content')
-    <div class="container-fluid">
-        <div class="row page-title-row">
-            <div class="col-md-6">
-                <h3>Tags <small>» Listing</small></h3>
-            </div>
-            <div class="col-md-6 text-right">
-                <a href="/admin/tag/create" class="btn btn-success btn-md">
-                    <i class="fa fa-plus-circle"></i> New Tag
-                </a>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12">
-
-                @include('admin.partials.errors')
-                @include('admin.partials.success')
-
-                <table id="tags-table" class="table table-striped table-bordered">
-                    <thead>
-                        <tr>
-                            <th>Tag</th>
-                            <th>Title</th>
-                            <th class="hidden-sm">Subtitle</th>
-                            <th class="hidden-md">Page Image</th>
-                            <th class="hidden-md">Meta Description</th>
-                            <th class="hidden-md">Layout</th>
-                            <th class="hidden-sm">Direction</th>
-                            <th data-sortable="false">Actions</th>
-                        </tr>
+@include('admin.partials.head')
+  <body>  
+    <!-- Left column -->
+    <div class="templatemo-flex-row">
+      
+      @include('admin.partials.navbar')
+      <!-- Main content --> 
+      <div class="templatemo-content col-1 light-gray-bg">
+        
+        <div class="templatemo-content-container">
+        <div class="panel panel-default templatemo-content-widget white-bg no-padding templatemo-overflow-hidden">
+              <div class="panel-heading templatemo-position-relative">
+               
+                <h2 class="text-uppercase">Tags Table</h2>
+                <a href="#" class="fa fa-plus"></a>
+              </div>
+              <div class="table-responsive">
+                <table class="table table-striped table-bordered">
+                  <thead>
+                    <tr>
+                      <td style="width:8%;">Tag</td>
+                      <td style="width:18%;">Title</td>
+                      <td style="width:20%;">Subtitle</td>
+                      <td style="width:30%;">Meta Descriptin</td>
+                      <td style="width:13%;">Action</td>
+                    </tr>
                      </thead>
-                    <tbody>
-                    @foreach ($tags as $tag)
-                        <tr>
-                            <td>{{ $tag->tag }}</td>
-                            <td>{{ $tag->title }}</td>
-                            <td class="hidden-sm">{{ $tag->subtitle }}</td>
-                            <td class="hidden-md">{{ $tag->page_image }}</td>
-                            <td class="hidden-md">{{ $tag->meta_description }}</td>
-                            <td class="hidden-md">{{ $tag->layout }}</td>
-                            <td class="hidden-sm">
-                                @if ($tag->reverse_direction)
-                                    Reverse
-                                @else
-                                    Normal
-                                @endif
-                            </td>
-                            <td>
-                                <a href="/admin/tag/{{ $tag->id }}/edit" class="btn btn-xs btn-info">
-                                    <i class="fa fa-edit"></i> Edit
-                                </a>
-                            </td>
-                        </tr>
-                    @endforeach
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </div>
-@stop
+                   <tbody>
+ 
+                    <td>Tag</td>
+                    <td>Title</td>
+                    <td>Subtitle</td>
+                    <td>Meta Descriptin</td>
+                    <td>
+                        <a href="" class="templatemo-edit-btn">Edit</a>
+                        <a href="" class="templatemo-edit-btn">Delete</a>
+                    </td>
+                    </tr>
 
-@section('scripts')
+
+                  </tbody>
+                </table>    
+              </div>                          
+        
+        </div>
+
+          
+          <div class="pagination-wrap">
+            <ul class="pagination">
+              <li class="active"><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3 <span class="sr-only">(current)</span></a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li>
+                <a href="#" aria-label="Next">
+                  <span aria-hidden="true"><i class="fa fa-play"></i></span>
+                </a>
+              </li>
+            </ul>
+          </div>          
+          <footer class="text-right">
+            <p>Copyright &copy; 2084 Company Name 
+            | More Templates <a href="http://www.mycodes.net/" target="_blank">源码之家</a></p>
+          </footer>         
+        </div>
+      </div>
+    </div>
+    
+    <!-- JS -->
+    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>      <!-- jQuery -->
+    <script type="text/javascript" src="js/templatemo-script.js"></script>      <!-- Templatemo Script -->
     <script>
-        $(function() {
-            $("#tags-table").DataTable({
-            });
-        });
+      $(document).ready(function(){
+        // Content widget with background image
+        var imageUrl = $('img.content-bg-img').attr('src');
+        $('.templatemo-content-img-bg').css('background-image', 'url(' + imageUrl + ')');
+        $('img.content-bg-img').hide();        
+      });
     </script>
-@stop
+  </body>
+</html>

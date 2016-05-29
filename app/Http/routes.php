@@ -24,15 +24,15 @@ Route::get('blog', 'BlogController@index');
 Route::get('blog/{slug}', 'BlogController@showPost');
 
 //后台路由
-Route::any('/test/login','admin\LoginController@login' );
+// Route::any('/test/login','admin\LoginController@login' );
 
-Route::any('/test',function () {
-    return redirect('test/home');
-});
+// Route::any('/test',function () {
+//     return redirect('test/home');
+// });
 
-Route::any('/test/home','admin\IndexController@index' );
-Route::any('/test/post','admin\IndexController@post' );
-Route::any('/test/tag','admin\IndexController@tag' );
+// Route::any('/test/home','admin\IndexController@index' );
+// Route::any('/test/post','admin\IndexController@post' );
+// Route::any('/test/tag','admin\IndexController@tag' );
 
 //后台路由
 Route::get('admin', function () {
@@ -40,6 +40,7 @@ Route::get('admin', function () {
 });
 
 Route::group(['namespace' => 'Admin', 'middleware' => 'auth'], function () {
+	Route::resource('admin/home','HomeController' );
     Route::resource('admin/post', 'PostController');
     Route::resource('admin/tag', 'TagController');
     Route::get('admin/upload', 'UploadController@index');

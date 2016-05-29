@@ -82,4 +82,35 @@ class Post extends Model
 
         $this->tags()->detach();
     }
+
+    // 在 Post 类的 $dates 属性后添加 $fillable 属性
+	protected $fillable = [
+	    'title', 'subtitle', 'content_raw', 'page_image', 'meta_description','layout', 'is_draft', 'published_at',
+	];
+
+	// 然后在 Post 模型类中添加如下几个方法
+
+	/**
+	 * Return the date portion of published_at
+	 */
+	public function getPublishDateAttribute($value)
+	{
+	    return $this->published_at->format('M-j-Y');
+	}
+
+	/**
+	 * Return the time portion of published_at
+	 */
+	public function getPublishTimeAttribute($value)
+	{
+	    return $this->published_at->format('g:i A');
+	}
+
+	/**
+	 * Alias for content_raw
+	 */
+	public function getContentAttribute($value)
+	{
+	    return $this->content_raw;
+	}
 }

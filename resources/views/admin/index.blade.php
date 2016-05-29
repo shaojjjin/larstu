@@ -1,8 +1,9 @@
-@include('test.partials.head')
+@include('admin.partials.head')
+
 	<body>  
 	<!-- Left column -->
 	<div class="templatemo-flex-row">
-	@include('test.partials.navbar')
+	@include('admin.partials.navbar')
 	<!-- Main content --> 
 	<div class="templatemo-content col-1 light-gray-bg">
 		<div class="templatemo-content-container">
@@ -42,31 +43,35 @@
             <h2 class="text-uppercase">Post Table</h2>
           </div>
           <div class="table-responsive">
+
+            @include('admin.partials.errors')
+            @include('admin.partials.success')
+
             <table class="table table-striped table-bordered">
               <thead>
                 <tr>
-                  <td style="width:25%;">Title</td>
-                  <td style="width:15%;">Tags</td>
-                  <td style="width:15%;">Subtitle</td>
-                  <td style="width:15%;">Time</td>
-                  <td style="width:12%;">Action</td>
+                  <td style="width:35%;">Title</td>
+                  <td style="width:8%;">Tags</td>
+                  <td style="width:10%;">Time</td>
+                  <td style="width:8.5%;">Action</td>
                 </tr>
                  </thead>
                <tbody>
+                @foreach ($posts as $post)
+				<tr>
 
-                <td>Tag</td>
+                <td>{{ $post->title }}</td>
                 <td>Title</td>
-                <td>Subtitle</td>
-                <td>Meta Descriptin</td>
+                <td>{{ $post->published_at->format('j-M-y g:ia') }}</td>
                 <td>
                     <a href="" class="templatemo-edit-btn">Edit</a>
                     <a href="" class="templatemo-edit-btn">Delete</a>
                 </td>
                 </tr>
+				@endforeach
 
-
-              </tbody>
-            </table>                             
+           		</tbody>
+            	</table>                             
     
 		     </div>
 		     </div>
@@ -77,7 +82,18 @@
 		</div>
 	</div>
 	</div>
+	
+	
 
+	@section('scripts')
+	<script>
+	    $(function() {
+	        $("#posts-table").DataTable({
+	            order: [[0, "desc"]]
+	        });
+	    });
+	</script>
+	@stop
 	<!-- JS -->
 	<script src="js/jquery-1.11.2.min.js"></script>      <!-- jQuery -->
 	<script src="js/jquery-migrate-1.2.1.min.js"></script> <!--  jQuery Migrate Plugin -->

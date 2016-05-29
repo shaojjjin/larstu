@@ -9,18 +9,17 @@ use App\Http\Requests\PostUpdateRequest;
 use App\Http\Controllers\Controller;
 use App\Post;
 
-class PostController extends Controller
+class HomeController extends Controller
 {
     /**
      * Display a listing of the posts.
      */
     public function index()
     {
-        return view('admin.post.index')
-                        ->withPosts(Post::all());
+        return view('admin.index')->withPosts(Post::all());
     }
 
-    /**
+     /**
      * Show the new post form
      */
     public function create()
