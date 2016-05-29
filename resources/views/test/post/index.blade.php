@@ -8,7 +8,7 @@
 		<div class="templatemo-content-container">
 		  <div class="templatemo-content-widget white-bg">
 			<h2 class="margin-bottom-10">New Post</h2>
-			<p>Here goes another form and form controls.</p>
+			<p>Here is where you can write down.</p>
 			<form action="index.html" class="templatemo-login-form" method="post" enctype="multipart/form-data">
 			  <div class="row form-group">
 				<div class="col-lg-9 col-md-6 form-group">                  
