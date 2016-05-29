@@ -26,206 +26,179 @@
 		<div class="templatemo-flex-row">
 		@include('test.partials.navbar')
 		<!-- Main content --> 
-		<div class="templatemo-content col-1 light-gray-bg">
-			<div class="templatemo-content-container">
-				<div class="templatemo-flex-row flex-content-row">
-					<div class="templatemo-content-widget white-bg col-2">
-						<i class="fa fa-times"></i>
-						<div class="square"></div>
-						<h2 class="templatemo-inline-block">Visual Admin Template</h2><hr>
-						<p>Works on all major browsers. IE 10+. Visual Admin is <a href="#" target="_parent">free responsive admin template</a> for everyone. Feel free to use this template for your backend user interfaces. Please tell your friends about <a href="http://www.templatemo.com" target="_parent">templatemo.com</a> website. You may <a href="#" target="_parent">contact us</a> if you have anything to say.</p>
-						<p>Nunc placerat purus eu tincidunt consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus nulla quis risus auctor, non placerat augue consectetur. Fusce mi lacus, semper sit amet mattis eu.</p>              
+ <div class="templatemo-content col-1 light-gray-bg">
+		<div class="templatemo-content-container">
+		  <div class="templatemo-content-widget white-bg">
+			<h2 class="margin-bottom-10">Preferences</h2>
+			<p>Here goes another form and form controls.</p>
+			<form action="index.html" class="templatemo-login-form" method="post" enctype="multipart/form-data">
+			  <div class="row form-group">
+				<div class="col-lg-6 col-md-6 form-group">                  
+					<label for="inputFirstName">First Name</label>
+					<input type="text" class="form-control" id="inputFirstName" placeholder="John">                  
+				</div>
+				<div class="col-lg-6 col-md-6 form-group">                  
+					<label for="inputLastName">Last Name</label>
+					<input type="text" class="form-control" id="inputLastName" placeholder="Smith">                  
+				</div> 
+			  </div>
+			  <div class="row form-group">
+				<div class="col-lg-6 col-md-6 form-group">                  
+					<label for="inputUsername">Username</label>
+					<input type="text" class="form-control" id="inputUsername" placeholder="Admin">                  
+				</div>
+				<div class="col-lg-6 col-md-6 form-group">                  
+					<label for="inputEmail">Email</label>
+					<input type="email" class="form-control" id="inputEmail" placeholder="admin@company.com">                  
+				</div> 
+			  </div>
+			  <div class="row form-group">
+				<div class="col-lg-6 col-md-6 form-group">                  
+					<label for="inputCurrentPassword">Current Password</label>
+					<input type="password" class="form-control highlight" id="inputCurrentPassword" placeholder="*********************">                  
+				</div>                
+			  </div>
+			  <div class="row form-group">
+				<div class="col-lg-6 col-md-6 form-group">                  
+					<label for="inputNewPassword">New Password</label>
+					<input type="password" class="form-control" id="inputNewPassword">
+				</div>
+				<div class="col-lg-6 col-md-6 form-group">                  
+					<label for="inputConfirmNewPassword">Confirm New Password</label>
+					<input type="password" class="form-control" id="inputConfirmNewPassword">
+				</div> 
+			  </div>
+			  <div class="row form-group">
+				<div class="col-lg-12 has-success form-group">                  
+					<label class="control-label" for="inputWithSuccess">Input with success</label>
+					<input type="text" class="form-control" id="inputWithSuccess">
+				</div>
+			  </div>
+			  <div class="row form-group">
+				<div class="col-lg-12 has-warning form-group">                  
+					<label class="control-label" for="inputWithWarning">Input with warning</label>
+					<input type="text" class="form-control" id="inputWithWarning">
+				</div>
+			  </div>
+			  <div class="row form-group">
+				<div class="col-lg-12 has-error form-group">                  
+					<label class="control-label" for="inputWithError">Input with error</label>
+					<input type="text" class="form-control" id="inputWithError">
+				</div>
+			  </div>
+			  <div class="row form-group">
+				<div class="col-lg-12 form-group">                   
+					<label class="control-label" for="inputNote">Note</label>
+					<textarea class="form-control" id="inputNote" rows="3"></textarea>
+				</div>
+			  </div>
+			  <div class="row form-group">
+				<div class="col-lg-6 col-md-6 form-group"> 
+				  <label class="control-label templatemo-block">Single Selection Control</label>                 
+				  <select class="form-control">
+					<option value="html">HTML</option>
+					<option value="plain">Plain Text</option>                      
+				  </select>
+				</div>
+				<div class="col-lg-6 col-md-6 form-group">                  
+					<div class="templatemo-block margin-bottom-5">
+					  <input type="checkbox" name="emailOptions" id="c1" value="new" checked> 
+					  <label for="c1" class="font-weight-400"><span></span>Email me when new member sign up.</label> 
 					</div>
-					<div class="templatemo-content-widget white-bg col-1 text-center">
-						<i class="fa fa-times"></i>
-						<h2 class="text-uppercase">Maris</h2>
-						<h3 class="text-uppercase margin-bottom-10">Design Project</h3>
-						<img src="images/bicycle.jpg" alt="Bicycle" class="img-circle img-thumbnail">
+					<div class="templatemo-block margin-bottom-5">
+					  <input type="checkbox" name="emailOptions" id="c2" value="weekly">
+					  <label for="c2" class="font-weight-400"><span></span>Weekly summary email</label> 
 					</div>
-					<div class="templatemo-content-widget white-bg col-1">
-						<i class="fa fa-times"></i>
-						<h2 class="text-uppercase">Dictum</h2>
-						<h3 class="text-uppercase">Sedvel Erat Non</h3><hr>
-						<div class="progress">
-							<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
-						</div>
-						<div class="progress">
-							<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 50%;"></div>
-						</div>
-						<div class="progress">
-							<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
-						</div>                          
+				</div> 
+			  </div>
+			  <div class="row form-group">
+				<div class="col-lg-6 col-md-6 form-group"> 
+				  <label class="control-label templatemo-block">Multiple Selection Control</label>                 
+				  <select multiple class="templatemo-multi-select form-control" style="overflow-y: scroll;">
+					<option value="">Charts</option>
+					<option value="">Graphs</option>
+					<option value="">Icons</option>
+					<option value="">Repsonsive</option>  
+					<option value="">HTML5</option>
+					<option value="">CSS3</option>
+					<option value="">jQuery</option>                    
+				  </select>
+				</div>
+				<div class="col-lg-6 col-md-6 form-group">
+				  <div>
+					<label class="control-label templatemo-block">Email Option</label> 
+					<div class="templatemo-block margin-bottom-5">
+					  <input type="radio" name="emailOptions" id="r1" value="html" checked>
+					  <label for="r1" class="font-weight-400"><span></span>HTML Format</label>
+					</div>
+					<div class="templatemo-block margin-bottom-5">
+					  <input type="radio" name="emailOptions" id="r2" value="plain">
+					  <label for="r2" class="font-weight-400"><span></span>Plain Text</label>
+					</div>
+					<div class="templatemo-block margin-bottom-5">
+					  <input type="radio" name="emailOptions" id="r3" value="rich">
+					  <label for="r3" class="font-weight-400"><span></span>Rich Text</label>
+					</div>                    
+				  </div>                  
+				</div> 
+			  </div>
+			  <div class="row form-group">
+				<div class="col-lg-12 form-group">                   
+					<div class="margin-right-15 templatemo-inline-block">
+					  <input type="checkbox" name="server" id="c3" value="" checked>
+					  <label for="c3" class="font-weight-400"><span></span>Server Status</label>
+					</div>
+					<div class="margin-right-15 templatemo-inline-block">                      
+					  <input type="checkbox" name="member" id="c4" value="">
+					  <label for="c4" class="font-weight-400"><span></span>Member Status</label>
+					</div>
+					<div class="margin-right-15 templatemo-inline-block">
+					  <input type="checkbox" name="expired" id="c5" value="">
+					  <label for="c5" class="font-weight-400"><span></span>Expired Members</label>                      
 					</div>
 				</div>
-				<div class="templatemo-flex-row flex-content-row">
-					<div class="col-1">              
-						<div class="templatemo-content-widget orange-bg">
-							<i class="fa fa-times"></i>                
-							<div class="media">
-								<div class="media-left">
-									<a href="#">
-										<img class="media-object img-circle" src="images/sunset.jpg" alt="Sunset">
-									</a>
-								</div>
-								<div class="media-body">
-									<h2 class="media-heading text-uppercase">Consectur Fusce Enim</h2>
-									<p>Phasellus dapibus nulla quis risus auctor, non placerat augue consectetur.</p>  
-								</div>        
-							</div>                
-						</div>            
-						<div class="templatemo-content-widget white-bg">
-							<i class="fa fa-times"></i>
-							<div class="media">
-								<div class="media-left">
-									<a href="#">
-										<img class="media-object img-circle" src="images/sunset.jpg" alt="Sunset">
-									</a>
-								</div>
-								<div class="media-body">
-									<h2 class="media-heading text-uppercase">Consectur Fusce Enim</h2>
-									<p>Phasellus dapibus nulla quis risus auctor, non placerat augue consectetur.</p>  
-								</div>
-							</div>                
-						</div>            
+			  </div>
+			  <div class="row form-group">
+				<div class="col-lg-12 form-group">                   
+					<div class="margin-right-15 templatemo-inline-block">
+					  <input type="radio" name="radio" id="r4" value="">
+					  <label for="r4" class="font-weight-400"><span></span>Bootstrap</label>
 					</div>
-					<div class="col-1">
-						<div class="panel panel-default templatemo-content-widget white-bg no-padding templatemo-overflow-hidden">
-							<i class="fa fa-times"></i>
-							<div class="panel-heading templatemo-position-relative"><h2 class="text-uppercase">User Table</h2></div>
-							<div class="table-responsive">
-								<table class="table table-striped table-bordered">
-									<thead>
-										<tr>
-											<td>No.</td>
-											<td>First Name</td>
-											<td>Last Name</td>
-											<td>Username</td>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>1.</td>
-											<td>John</td>
-											<td>Smith</td>
-											<td>@jS</td>
-										</tr>
-										<tr>
-											<td>2.</td>
-											<td>Bill</td>
-											<td>Jones</td>
-											<td>@bJ</td>
-										</tr>
-										<tr>
-											<td>3.</td>
-											<td>Mary</td>
-											<td>James</td>
-											<td>@mJ</td>
-										</tr>
-										<tr>
-											<td>4.</td>
-											<td>Steve</td>
-											<td>Bride</td>
-											<td>@sB</td>
-										</tr>
-										<tr>
-											<td>5.</td>
-											<td>Paul</td>
-											<td>Richard</td>
-											<td>@pR</td>
-										</tr>                    
-									</tbody>
-								</table>    
-							</div>                          
-						</div>
-					</div>           
-				</div> <!-- Second row ends -->
-				
-				<div class="templatemo-flex-row flex-content-row templatemo-overflow-hidden"> <!-- overflow hidden for iPad mini landscape view-->
-					<div class="col-1 templatemo-overflow-hidden">
-						<div class="templatemo-content-widget white-bg templatemo-overflow-hidden">
-							<i class="fa fa-times"></i>
-							<div class="templatemo-flex-row flex-content-row">
-								<div class="col-1 col-lg-6 col-md-12">
-									<h2 class="text-center">Modular<span class="badge">new</span></h2>
-									<div id="pie_chart_div" class="templatemo-chart"></div> <!-- Pie chart div -->
-								</div>
-								<div class="col-1 col-lg-6 col-md-12">
-									<h2 class="text-center">Interactive<span class="badge">new</span></h2>
-									<div id="bar_chart_div" class="templatemo-chart"></div> <!-- Bar chart div -->
-								</div>  
-							</div>                
-						</div>
+					<div class="margin-right-15 templatemo-inline-block">
+					  <input type="radio" name="radio" id="r5" value="" checked>
+					  <label for="r5" class="font-weight-400"><span></span>Foundation</label>
+					</div>
+					<div class="margin-right-15 templatemo-inline-block">
+					  <input type="radio" name="radio" id="r6" value="">
+					  <label for="r6" class="font-weight-400"><span></span>Skeleton</label>
 					</div>
 				</div>
-				<footer class="text-right">
-					<p>Copyright &copy; 2016</p>
-				</footer>         
-			</div>
+			  </div>
+			  <div class="row form-group">
+				<div class="col-lg-12">
+				  <label class="control-label templatemo-block">File Input</label> 
+				  <!-- <input type="file" name="fileToUpload" id="fileToUpload" class="margin-bottom-10"> -->
+				  <input type="file" name="fileToUpload" id="fileToUpload" class="filestyle" data-buttonName="btn-primary" data-buttonBefore="true" data-icon="false">
+				  <p>Maximum upload size is 5 MB.</p>                  
+				</div>
+			  </div>
+			  <div class="form-group text-right">
+				<button type="submit" class="templatemo-blue-button">Update</button>
+				<button type="reset" class="templatemo-white-button">Reset</button>
+			  </div>                           
+			</form>
+		  </div>
+		  <footer class="text-right">
+			<p>Copyright &copy; 2084 Company Name 
+			| More Templates <a href="http://www.mycodes.net/" target="_blank">源码之家</a></p>
+		  </footer>
 		</div>
-		</div>
+	  </div>
+	</div>
 
-		<!-- JS -->
-		<script src="js/jquery-1.11.2.min.js"></script>      <!-- jQuery -->
-		<script src="js/jquery-migrate-1.2.1.min.js"></script> <!--  jQuery Migrate Plugin -->
-		<script src="https://www.google.com/jsapi"></script> <!-- Google Chart -->
-		<script>
-		/* Google Chart 
-		-------------------------------------------------------------------*/
-		// Load the Visualization API and the piechart package.
-		google.load('visualization', '1.0', {'packages':['corechart']});
-
-		// Set a callback to run when the Google Visualization API is loaded.
-		google.setOnLoadCallback(drawChart); 
-
-		// Callback that creates and populates a data table,
-		// instantiates the pie chart, passes in the data and
-		// draws it.
-		function drawChart() {
-
-				// Create the data table.
-				var data = new google.visualization.DataTable();
-				data.addColumn('string', 'Topping');
-				data.addColumn('number', 'Slices');
-				data.addRows([
-					['Mushrooms', 3],
-					['Onions', 1],
-					['Olives', 1],
-					['Zucchini', 1],
-					['Pepperoni', 2]
-				]);
-
-				// Set chart options
-				var options = {'title':'How Much Pizza I Ate Last Night'};
-
-				// Instantiate and draw our chart, passing in some options.
-				var pieChart = new google.visualization.PieChart(document.getElementById('pie_chart_div'));
-				pieChart.draw(data, options);
-
-				var barChart = new google.visualization.BarChart(document.getElementById('bar_chart_div'));
-				barChart.draw(data, options);
-		}
-
-		$(document).ready(function(){
-			if($.browser.mozilla) {
-				//refresh page on browser resize
-				// http://www.sitepoint.com/jquery-refresh-page-browser-resize/
-				$(window).bind('resize', function(e)
-				{
-					if (window.RT) clearTimeout(window.RT);
-					window.RT = setTimeout(function()
-					{
-						this.location.reload(false); /* false to get page from cache */
-					}, 200);
-				});      
-			} else {
-				$(window).resize(function(){
-					drawChart();
-				});  
-			}   
-		});
-
-		</script>
-		<script type="text/javascript" src="js/templatemo-script.js"></script>      <!-- Templatemo Script -->
-
-		</body>
+	<!-- JS -->
+	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>        <!-- jQuery -->
+	<script type="text/javascript" src="js/bootstrap-filestyle.min.js"></script>  <!-- http://markusslima.github.io/bootstrap-filestyle/ -->
+	<script type="text/javascript" src="js/templatemo-script.js"></script>        <!-- Templatemo Script -->
+  </body>
 </html>

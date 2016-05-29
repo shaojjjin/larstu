@@ -32,17 +32,17 @@
 			</li>
 
 			<li>
-				<a href="data-visualization.html" @if (Request::is('test/post1*')) class="active" @endif>
+				<a href="/test/tag" @if (Request::is('test/tag*')) class="active" @endif>
 				<i class="fa fa-database fa-fw"></i>Tags</a>
 			</li>
 
 			<li>
-				<a href="maps.html" @if (Request::is('test/post2*')) class="active" @endif>
+				<a href="/test/setting" @if (Request::is('test/post2*')) class="active" @endif>
 				<i class="fa fa-map-marker fa-fw"></i>Settings</a>
 			</li>
 
 			<li>
-				<a href="login.html" @if (Request::is('test/post3*')) class="active" @endif>
+				<a href="/auth/logout" @if (Request::is('test/post3*')) class="active" @endif>
 				<i class="fa fa-eject fa-fw"></i>Sign Out</a>
 			</li>
 

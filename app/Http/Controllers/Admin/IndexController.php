@@ -18,4 +18,9 @@ class IndexController extends Controller
     {
     	return view('test.post');
     }
+
+    public function tag()
+    {
+    	return view('test.tag');
+    }
 }

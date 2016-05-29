@@ -32,6 +32,7 @@ Route::any('/test/login','admin\LoginController@login' );
 
 Route::any('/test','admin\IndexController@index' );
 Route::any('/test/post','admin\IndexController@post' );
+Route::any('/test/tag','admin\IndexController@tag' );
 
 //后台路由
 Route::get('admin', function () {
