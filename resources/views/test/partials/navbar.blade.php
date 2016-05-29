@@ -22,13 +22,13 @@
 		<ul>
 
 			<li>
-				<a href="/test" @if (Request::is('test')) class="active" @endif>
-				<i class="fa fa-home fa-fw"></i>Dashboard</a>
+				<a href="/test/home" @if (Request::is('test/home')) class="active" @endif>
+				<i class="fa fa-home fa-fw"></i>HOME</a>
 			</li>
 
 			<li>
 				<a href="/test/post" @if (Request::is('test/post*')) class="active" @endif>
-				<i class="fa fa-bar-chart fa-fw"></i>New Post</a>
+				<i class="fa fa-edit"></i>New Post</a>
 			</li>
 
 			<li>
@@ -37,8 +37,8 @@
 			</li>
 
 			<li>
-				<a href="/test/setting" @if (Request::is('test/post2*')) class="active" @endif>
-				<i class="fa fa-map-marker fa-fw"></i>Settings</a>
+				<a href="#" @if (Request::is('test/post2*')) class="active" @endif>
+				<i class="fa fa-sliders fa-fw"></i>Settings</a>
 			</li>
 
 			<li>

@@ -214,7 +214,7 @@ footer { padding: 15px; }
 /* Main Content Area */
 .templatemo-content {
   margin-top: 0px;
-  min-height: 600px;
+  min-height: 780px;
   padding: 0;  
   overflow-x: hidden;
 }
@@ -245,6 +245,17 @@ footer { padding: 15px; }
 }
 .templatemo-content-widget.no-padding {	padding: 0; }
 .fa-times {
+	border-radius: 15px;
+  	color: white;
+  	cursor: pointer;
+	padding: 4px 5px;
+  	position: absolute;
+  	top: 15px;
+  	right: 15px;
+  	z-index: 100;
+  	transition: all 0.3s ease;
+}
+.fa-plus {
 	border-radius: 15px;
   	color: white;
   	cursor: pointer;
@@ -434,6 +445,29 @@ input[type="radio"]:checked + label span {
 	background-color: #39ADB4;
 	border: 1px solid #39ADB4;
 	color: white;
+}
+.templatemo-new-btn {
+	width:px;
+	border-radius: 15px;
+  	color: white;
+  	cursor: pointer;
+	padding: 4px 5px;
+  	position: absolute;
+  	top: 15px;
+  	right: 15px;
+  	z-index: 100;
+  	transition: all 0.3s ease;
+}
+.templatemo-new-btn:hover {
+	border-radius: 15px;
+  	color: white;
+  	cursor: pointer;
+	padding: 4px 5px;
+  	position: absolute;
+  	top: 15px;
+  	right: 15px;
+  	z-index: 100;
+  	transition: all 0.3s ease;
 }
 .templatemo-link { color: black; }
 .templatemo-link:hover { color: #39ADB4; }

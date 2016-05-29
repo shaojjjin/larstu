@@ -1,25 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">  
-    <title>Visual Admin Dashboard - Manage Users</title>
-    <meta name="description" content="">
-
-      <link href='http://fonts.useso.com/css?family=Open+Sans:400,300,400italic,700' rel='stylesheet' type='text/css'>
-      <link href="{{asset('/css/font-awesome.min.css')}}" rel="stylesheet">
-      <link href="{{asset('/css/bootstrap.min.css')}}" rel="stylesheet">
-      <link href="{{asset('/css/templatemo-style.css')}}" rel="stylesheet">
-      
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="js/html5shiv.min.js"></script>
-      <script src="js/respond.min.js"></script>
-    <![endif]-->
-
-  </head>
+@include('test.partials.head')
   <body>  
     <!-- Left column -->
     <div class="templatemo-flex-row">
@@ -31,50 +10,34 @@
         <div class="templatemo-content-container">
         <div class="panel panel-default templatemo-content-widget white-bg no-padding templatemo-overflow-hidden">
               <div class="panel-heading templatemo-position-relative">
+               
                 <h2 class="text-uppercase">Tags Table</h2>
+                <a href="#" class="fa fa-plus"></a>
               </div>
               <div class="table-responsive">
                 <table class="table table-striped table-bordered">
                   <thead>
                     <tr>
-                      <td>Tag</td>
-                      <td>Title</td>
-                      <td>Subtitle</td>
-                      <td>Meta Descriptin</td>
-                      <td>Action</td>
+                      <td style="width:8%;">Tag</td>
+                      <td style="width:18%;">Title</td>
+                      <td style="width:20%;">Subtitle</td>
+                      <td style="width:30%;">Meta Descriptin</td>
+                      <td style="width:13%;">Action</td>
                     </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>1.</td>
-                      <td>John</td>
-                      <td>Smith</td>
-                      <td>@jS</td>
+                     </thead>
+                   <tbody>
+ 
+                    <td>Tag</td>
+                    <td>Title</td>
+                    <td>Subtitle</td>
+                    <td>Meta Descriptin</td>
+                    <td>
+                        <a href="" class="templatemo-edit-btn">Edit</a>
+                        <a href="" class="templatemo-edit-btn">Delete</a>
+                    </td>
                     </tr>
-                    <tr>
-                      <td>2.</td>
-                      <td>Bill</td>
-                      <td>Jones</td>
-                      <td>@bJ</td>
-                    </tr>
-                    <tr>
-                      <td>3.</td>
-                      <td>Mary</td>
-                      <td>James</td>
-                      <td>@mJ</td>
-                    </tr>
-                    <tr>
-                      <td>4.</td>
-                      <td>Steve</td>
-                      <td>Bride</td>
-                      <td>@sB</td>
-                    </tr>
-                    <tr>
-                      <td>5.</td>
-                      <td>Paul</td>
-                      <td>Richard</td>
-                      <td>@pR</td>
-                    </tr>                    
+
+
                   </tbody>
                 </table>    
               </div>                          

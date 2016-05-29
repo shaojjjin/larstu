@@ -16,11 +16,11 @@ class IndexController extends Controller
 
     public function post()
     {
-    	return view('test.post');
+    	return view('test.post.index');
     }
 
     public function tag()
     {
-    	return view('test.tag');
+    	return view('test.tag.index');
     }
 }
